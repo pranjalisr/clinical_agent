@@ -1,0 +1,43 @@
+
+ADMISSION NOTE
+==============
+Patient: [REDACTED FOR DEMO]
+Date of Admission: 05/02/2026
+Ward: General Medicine
+
+Chief Complaints: Chest pain x 2 days, shortness of breath
+
+History of Present Illness:
+Patient presented with progressive chest pain and dyspnoea. 
+History of hypertension and type 2 diabetes on oral hypoglycemics.
+
+Vitals: BP 160/100 mmHg, PR 92/min, RR 22/min, SpO2 94% on room air, Temp 37.2°C
+
+Allergies: NSAID allergy documented
+
+Past History: Hypertension (10 years), Type 2 Diabetes Mellitus
+
+PROGRESS NOTE (Day 3)
+======================
+Date: 08/02/2026
+Patient improving. Repeat ECG shows no new changes.
+Troponin: NEGATIVE (serial)
+Echo: EF 55%, no wall motion abnormality
+
+CONFLICTING DATA: 
+- Admission note diagnosis: "Unstable Angina"
+- Progress note Day 3 diagnosis: "Musculoskeletal chest pain"
+These conflict and require clinician review.
+
+DISCHARGE NOTE
+==============
+Date of Discharge: 10/02/2026
+Condition: Stable
+Discharge Medications:
+1. Tab Metformin 500mg - 1-0-1 - Continue
+2. Tab Amlodipine 5mg - 0-0-1 - Continue
+3. Tab Aspirin 75mg - 1-0-0 - NEW (no documented indication — NOTE: patient has NSAID allergy history)
+4. Tab Pantoprazole 40mg - 1-0-0 - NEW
+
+Follow-up: OPD review in 2 weeks
+Urine microalbumin: PENDING - report awaited
