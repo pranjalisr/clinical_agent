@@ -11,7 +11,7 @@
 pip install -r requirements.txt
 
 # 2. Add your API key
-cp .env.example .env
+cp .env
 # Open .env and replace: DEEPSEEK_API_KEY=your_actual_key_here
 
 # 3. Run
@@ -22,7 +22,7 @@ python main.py --patient patient_2
 
 ## Where to Add Your DeepSeek API Key
 
-1. Open `.env` (copy from `.env.example` if it doesn't exist)
+1. Open `.env` 
 2. Find this line:
    ```
    DEEPSEEK_API_KEY=your_deepseek_api_key_here
@@ -81,7 +81,6 @@ After running, check the `output/` folder:
 discharge_agent/
 ├── main.py                      # Entry point — run this
 ├── requirements.txt
-├── .env.example                 # Template for API key
 ├── agents/
 │   ├── discharge_agent.py       # Core agentic loop (Part 1)
 │   └── learning_loop.py         # Simulated reviewer + learning (Part 2)
@@ -245,17 +244,6 @@ The learning mechanism uses **correction memory with pattern injection**:
 **Reviewer consistency**: The simulated doctor applies a fixed policy. Real clinicians disagree. Production systems need multi-annotator agreement (Fleiss κ > 0.7) before using edit distance as signal.
 
 **Safety invariants must be preserved**: The no-fabrication and escalation rules are **hardcoded in the agent core** — they cannot be learned away. The learning loop only affects style and structure, never the safety layer.
-
----
-
-## What I'd Do With More Time
-
-1. **Multi-patient evaluation**: Run on 10+ synthetic patients, report aggregate metrics
-2. **Structured output validation**: Add a post-generation validator that checks every field against source text (regex + semantic similarity)
-3. **Confidence scores**: Have the LLM output 0-1 confidence per extracted field; low-confidence fields get flagged even if a value was found
-4. **Section-aware OCR**: Use document layout analysis to segment PDFs by section before extraction
-5. **Human-in-the-loop API**: Build a simple web UI where a clinician can confirm/reject each flag, closing the feedback loop properly
-6. **DPO fine-tuning**: With enough (draft, edited) pairs, fine-tune the model directly rather than prompt-injecting patterns
 
 ---
 
