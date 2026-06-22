@@ -358,7 +358,7 @@ SECTION ACCURACY (Final Iteration):
   PENDING RESULTS      : 1.000  ████████████████████
 ```
 
-### Limitations and Honest Discussion
+## Limitations and Honest Discussion
 
 **Cold-start.** With one patient, learned patterns are case-specific. Generalizable patterns require at least 50 patient pairs. Mitigation for production: seed the memory with expert-written correction examples.
 
